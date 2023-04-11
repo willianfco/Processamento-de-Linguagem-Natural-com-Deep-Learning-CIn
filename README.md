@@ -17,6 +17,7 @@ This project is part of the assessment for the Deep Learning specialization's Na
 - Pandas
 - Requests
 - NLP Libraries (NLTK, SpaCy, etc.)
+- Machine Learning Libraries (Scikit-Learn 1.2.x)
 - Deep Learning Libraries (TensorFlow 2.x)
 
 ## Installation
