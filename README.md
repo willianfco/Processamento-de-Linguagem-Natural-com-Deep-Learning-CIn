@@ -46,9 +46,13 @@ After that, the script splits the processed dataset into Train, Validation and T
 
 ## Results and Conclusion
 
-References
+## References
 
 * [Steam API Documentation](https://partner.steamgames.com/doc/store/getreviews)
 * [Natural Language Toolkit (NLTK)](https://www.nltk.org/)
 * [SpaCy](https://spacy.io/)
 * [Scikit-Learn SVM](https://scikit-learn.org/stable/modules/svm.html#classification)
+
+## License
+
+
