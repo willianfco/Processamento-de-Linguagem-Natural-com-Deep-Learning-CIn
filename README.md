@@ -28,9 +28,19 @@ To install the required libraries, run the following command:
 ```
 ## Data Collection
 
-The `Get_Reviews.ipynb` script collects all English reviews of the Dead by Daylight game on the Steam platform. The script uses the Steam review API and saves the collected reviews in a CSV file for further processing.
+The `get_reviews.ipynb` script collects all English reviews of the Dead by Daylight game on the Steam platform. The script uses the Steam review API and saves the collected reviews in a CSV file for further processing.
 
 ## Preprocessing and Data Cleaning
+
+The `pre_process.ipynb` script discards blank reviews and performs the following text processing technics:
+
+    1. Remove special characters and lowercase the text
+    2. Tokenize the text
+    3. Remove stopwords
+    4. Lemmatize the words
+    5. Reunite the words back to string
+
+After that, the script splits the processed dataset into Train, Validation and Test and save them as numpy zipped archives on the `processed` data folder.
 
 ## Data Analysis and Application of NLP Techniques
 
