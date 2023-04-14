@@ -57,6 +57,9 @@ After that, the script splits the processed dataset into Train, Validation and T
 * [Natural Language Toolkit (NLTK)](https://www.nltk.org/)
 * [SpaCy](https://spacy.io/)
 * [Scikit-Learn SVM](https://scikit-learn.org/stable/modules/svm.html#classification)
+* [Imbalanced-Learn](https://imbalanced-learn.org/stable/)
+* [Tensorflow](https://www.tensorflow.org/text/tutorials/classify_text_with_bert?hl=pt-br)
+* [HuggingFace](https://huggingface.co/gpt2)
 
 ## License
 
