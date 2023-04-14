@@ -8,8 +8,12 @@ This project is part of the assessment for the Deep Learning specialization's Na
 
 1. Collect all English reviews of the Dead by Daylight game on the Steam platform using the Steam review API.
 2. Perform preprocessing and data cleaning.
-3. Apply NLP techniques to extract insights and patterns from the data.
-4. 
+3. Apply NLP techniques to perform sentiment analisys and classify reviews using:
+
+   * SVM with Bag of Words
+   * SVM with Word2Vec
+   * BERT
+   * GPT-2
 
 ## Requirements
 
@@ -17,7 +21,7 @@ This project is part of the assessment for the Deep Learning specialization's Na
 - Pandas
 - Requests
 - NLP Libraries (NLTK, SpaCy, etc.)
-- Machine Learning Libraries (Scikit-Learn 1.2.x)
+- Machine Learning Libraries (Scikit-Learn e Imbalanced-Learn)
 - Deep Learning Libraries (TensorFlow 2.x)
 
 ## Installation
