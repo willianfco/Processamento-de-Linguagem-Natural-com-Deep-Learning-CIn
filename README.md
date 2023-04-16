@@ -22,7 +22,7 @@ This project is part of the assessment for the Deep Learning specialization's Na
 - Requests
 - NLP Libraries (NLTK, SpaCy, etc.)
 - Machine Learning Libraries (Scikit-Learn e Imbalanced-Learn)
-- Deep Learning Libraries (TensorFlow 2.x)
+- Deep Learning Libraries (TensorFlow 2.x, Torch 1.12.x)
 
 ## Installation
 
@@ -47,7 +47,7 @@ The `pre_process.ipynb` script discards blank reviews and performs the following
 
 After that, the script splits the processed dataset into Train, Validation and Test and save them as numpy zipped archives on the `processed` data folder.
 
-## Data Analysis and Application of NLP Techniques
+## Application of NLP Techniques
 
 ## Results and Conclusion
 
