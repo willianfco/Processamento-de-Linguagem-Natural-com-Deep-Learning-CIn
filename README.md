@@ -57,51 +57,51 @@ Since our dataset is imbalanced (≅ 81% Recomendations), we will be using `Rand
 
    We joined the train and validation sets to performed a cross-validation using Scikit-Learn SVC and Pipelines, in this case we got 59248 training samples and 17324 test samples. In our tunning tests, we found out that the Sigmoid kernel has proven to converge faster and archieve better performance then linear and rbf for this classification problem. Here are the hyperparameters used to train this model:
 
-      * kernel="sigmoid"
-      * tol=1e-3
-      * max_iter=-1
+      kernel="sigmoid"
+      tol=1e-3
+      max_iter=-1
    
    With this parameters, using fixed `seed = 0`, the final model performed worse then our naive baseline (≅ 81%) on the test set. Here are the metrics on the hold out data:
 
-      * Accuracy: 0.66
-      * Precision: 0.88
-      * Recall: 0.68
-      * F1: 0.77
-      * ROC AUC: 0.65
+      Accuracy: 0.66
+      Precision: 0.88
+      Recall: 0.68
+      F1: 0.77
+      ROC AUC: 0.65
 
    Second approach: SVM with Embeddings (Word2Vec)
 
    Again, we joined the train and validation sets to performed a cross-validation using Scikit-Learn SVC and Pipelines, in this case we got 59248 training samples and 17324 test samples. In our tunning tests, we also found out that the rbf kernel has proven better then any other options for this classification problem. Here are the hyperparameters used to train this model:
 
-      * kernel="rbf"
-      * tol=1e-3
-      * max_iter=-1
+      kernel="rbf"
+      tol=1e-3
+      max_iter=-1
 
    With this parameters, using fixed `seed = 0`, the final model also performed worse then our naive baseline (≅ 81%) on the test set. Here are the metrics on the hold out data:
 
-      * Accuracy: 0.58
-      * Precision: 0.93
-      * Recall: 0.52
-      * F1: 0.67
-      * ROC AUC: 0.68
+      Accuracy: 0.58
+      Precision: 0.93
+      Recall: 0.52
+      F1: 0.67
+      ROC AUC: 0.68
 
    Third approach: Bidirectional Encoder Representations from Transformers (BERT)
 
    For this approach we did not joined train and validation sets, since we were not using cross-validation methods due to model complexity and high computacional costs. The balanced training set had 46178 reviews, validation and test sets had 25985 reviews, a bit more then the last approaches. In this case, we fine-tunned the pre-trained tokenizer and bert-configs from the `bert-base-cased` version available at HuggingFace. The tunning process used thie following hyperparameters:
 
-      * optimizer="Adam"
-      * learning_rate=2e-5
-      * loss="sparse_categorical_crossentropy"
-      * epochs=3,
-      * batch_size=16
+      optimizer="Adam"
+      learning_rate=2e-5
+      loss="sparse_categorical_crossentropy"
+      epochs=3,
+      batch_size=16
 
    With this parameters, using fixed `seed = 0`, the final model performed better then the naive baseline and showed substacial increase on the hability to classify the reviews even with just 3 epochs of tunning. Here are the metrics on the hold out set:
 
-      * Accuracy: 0.86
-      * Precision: 0.96
-      * Recall: 0.86
-      * F1: 0.91
-      * ROC AUC: 0.93
+      Accuracy: 0.86
+      Precision: 0.96
+      Recall: 0.86
+      F1: 0.91
+      ROC AUC: 0.93
    
    Forth approach: Generative Pre-Trained Transformers (GPT-2)
 
