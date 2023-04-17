@@ -1,0 +1,58 @@
+
+###### The following prompt will be sent to GPT-4 to classify Dead By Daylight reviews using in context learn ######
+
+Prompt:
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+'''
+You will be classifying reviews from the game Dead By Daylight extracted directly from steam.
+
+Here are some examples:
+
+Review 1:  "Very fun, and won't cause you to fear for your life at night, so you can play it whenever, I 100% recommend, good graphics, intense game play. The cool part about this as well is that you need skill, you need to be able to calculate, predict, and you need to work together.  As someone who hasn't played the game in awhile (years), I am insanely happy and impressed with my purchase.  But cheapen things please.  :sob:"  ->  RECOMENDED
+
+Review 2:  "The game is fun with friends or alone, but the developers are constantly changing how perks behave and making it more killer sided than ever. It is fun to play occasionally, but not something I recommend for people looking to play long-term. The match-ups also never seem fair. It is either a new player or a very experienced killer."  ->  NOT RECOMENDED
+
+Proceed to the next ones:
+
+Review 3: "good idea ruined by incompetent developer team." -> {PLACE YOUR CLASSIFICATION HERE}
+
+Review 4:  "Bad if you get mad easily" -> {PLACE YOUR CLASSIFICATION HERE}
+
+Review 5: "very good game, i almost shit my pants because it gets scary sometimes" -> {PLACE YOUR CLASSIFICATION HERE}
+
+Review 6: "Playing with friends is the best part of this game but makes playing killer way too much work to be considered fun" ->  {PLACE YOUR CLASSIFICATION HERE}
+
+Review 7: I've been playing this game since 2019 as a survivor main and watching this game decline in balance + fun has been so frustrating and discouraging to say the least. Killers have become soooo strong + catered to, and I'm not able to buy perks in the store anymore - instead you buy the levels of said perk individually. Seems cosmetics are higher priority than actual gameplay to the devs and that makes me so sad. I haven't had fun in a long time and I always said this was my favourite game until today. Genuinely, doesn't make sense. :( I've uninstalled." -> {PLACE YOUR CLASSIFICATION HERE}
+
+Review 8: "This game is a little dark, but its super fun to play with friends and family. the maps are a little hard to see but there are lighter maps. You basically have to open the gate and get away from the killer, but i generally love this game. There are multiple different killers to choose from too. You can choose from a variety of different objects and skills to use/have. Its kinda gory, but this game is very fun. Different killers have different powers. You can play this game on multiple different devices: the switch, the PS4 and 5, the computer, and lots of other devices. The only thing I don't like about this game is that if you play it too much it gets boring like a lot of games, and the content is gory. But besides these factors, this game is great. It has great quality, it gives u options, and it has so many different maps you can choose from. This game also gives you a thrill. I remember playing this game at 12 am with my brother, and I was screaming because he was the killer and he was chasing me and was about to put me on a hook. This game overall is a great game to play." -> {PLACE YOUR CLASSIFICATION HERE}
+
+Review 9: "its so bugged tbh and the players are toxic, the whole community is shit, but i still love the game<33" -> {PLACE YOUR CLASSIFICATION HERE}
+
+Review 10: "Pretty good game. I wouldn't recommend if you get angry easily cause you're bound to get camped, targeted and bullied. I'm not a fan of the updates that are coming so I may stop playing eventually but, at the time of writing this review, its the best its been in a while." -> {PLACE YOUR CLASSIFICATION HERE}
+
+'''
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Expected classification:
+
+Review 3:   NOT RECOMENDED
+Review 4:   NOT RECOMENDED
+Review 5:   RECOMENDED
+Review 6:   NOT RECOMENDED
+Review 7:   NOT RECOMENDED
+Review 8:   RECOMENDED
+Review 9:   RECOMENDED
+Review 10:  RECOMENDED
+
+In Context classification:
+
+Review 3:   NOT RECOMENDED
+Review 4:   NOT RECOMENDED
+Review 5:   RECOMENDED
+Review 6:   NOT RECOMENDED
+Review 7:   NOT RECOMENDED
+Review 8:   RECOMENDED
+Review 9:   RECOMENDED
+Review 10:  RECOMENDED
+
+Accuracy on 7 reviews: 100%
