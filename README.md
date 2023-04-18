@@ -55,7 +55,7 @@ The processed dataset will be used on the SVM approaches, since it reduces conte
 
 Since our dataset is imbalanced (≅ 81% Recomendations), we will be using `RandomUnderSampler` from the Imbalanced-Learn library to reduce the amount of positive reviews randomly at our training sets, getting perfectly balanced reviews (50% Recomendations). The Validation, when used as model assessment, and Test sets were not balanced.
 
-   First approach: SVM with Bag of Words
+   #### First approach: SVM with Bag of Words
 
    We joined the train and validation sets to performed a cross-validation using Scikit-Learn SVC and Pipelines, in this case we got 59248 training samples and 17324 test samples. In our tunning tests, we found out that the Sigmoid kernel has proven to converge faster and archieve better performance then linear and rbf for this classification problem. Here are the hyperparameters used to train this model:
 
@@ -71,7 +71,7 @@ Since our dataset is imbalanced (≅ 81% Recomendations), we will be using `Rand
       F1: 0.77
       ROC AUC: 0.65
 
-   Second approach: SVM with Embeddings (Word2Vec)
+   #### Second approach: SVM with Embeddings (Word2Vec)
 
    Again, we joined the train and validation sets to performed a cross-validation using Scikit-Learn SVC and Pipelines, in this case we got 59248 training samples and 17324 test samples. In our tunning tests, we also found out that the rbf kernel has proven better then any other options for this classification problem. Here are the hyperparameters used to train this model:
 
@@ -87,7 +87,7 @@ Since our dataset is imbalanced (≅ 81% Recomendations), we will be using `Rand
       F1: 0.67
       ROC AUC: 0.68
 
-   Third approach: Bidirectional Encoder Representations from Transformers (BERT)
+   #### Third approach: Bidirectional Encoder Representations from Transformers (BERT)
 
    For this approach we did not joined train and validation sets, since we were not using cross-validation methods due to model complexity and high computacional costs. The balanced training set had 46178 reviews, validation and test sets had 25985 reviews, a bit more then the last approaches. In this case, we fine-tunned the pre-trained tokenizer and bert-configs from the `bert-base-cased` version available at HuggingFace. The tunning process used thie following hyperparameters:
 
@@ -105,15 +105,16 @@ Since our dataset is imbalanced (≅ 81% Recomendations), we will be using `Rand
       F1: 0.91
       ROC AUC: 0.93
    
-   Forth approach: Generative Pre-Trained Transformers (GPT-2)
+   #### Forth approach: Generative Pre-Trained Transformers (GPT-2)
 
    In this approach, since it is a generative model, it is not suited directly for classifications, but we concatenated the review text with the labels so that the model could learn the contexts in which the review was recomening or not the game. We followed the same steps as we did in the configurations of BERT, but in this case we used `GPT2Tokenizer` and the pre-trained version of `gpt-2` also available at HuggingFace transformers library. 
 
    Since this is a huge model, it took almost 3 hours to perform a single epoch of training, using `AdamW optmizer` with a realy small learning-rate (5e-4) with a linear schedule with warmupbut. With just this epoch, the model was able to generate reviews that were not present on any dataset and classify them in a reasonable way.
 
-   You can find all codes in this repository, but since the deep learning models were large files, we could'nt load it at our git. If you'd like to have acess to the pre-trained weights of the deep learning methods, contact us. 
+   You can find all codes in this repository, but since the deep learning models were large files, we couldn't load it at our repo. If you'd like to have acess to the pre-trained weights of the deep learning methods, contact us. 
 
-   We also performed in-context learn with prompt methods using GPT-4, you can find the results on `prompt_incontext.txt` and in the video presentation of this work.
+We also performed in-context learn with prompt methods using GPT-4, you can find the results on `prompt_incontext.txt` and in the video presentation of this work.
+
 
 ## Results and Conclusion
 
