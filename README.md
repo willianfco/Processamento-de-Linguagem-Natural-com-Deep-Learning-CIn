@@ -4,6 +4,8 @@ Authors: Julierme Silva and Willian Oliveira
 
 This project is part of the assessment for the Deep Learning specialization's Natural Language Processing with Deep Learning course at CIn-UFPE. It aims to employ Natural Language Processing (NLP) techniques in analyzing reviews for the Dead by Daylight game on the Steam platform. The primary focus is on sentiment analysis, categorizing `Recommended` reviews as positive and `Not Recommended` reviews as negative.
 
+The presentation of this assessment is available at [This Youtube Link](https://youtu.be/tcgLZFhK7P8).
+
 ## Objectives
 
 1. Collect all English reviews of the Dead by Daylight game on the Steam platform using the Steam review API.
