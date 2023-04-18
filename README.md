@@ -109,7 +109,7 @@ Since our dataset is imbalanced (≅ 81% Recomendations), we will be using `Rand
 
    Since this is a huge model, it took almost 3 hours to perform a single epoch of training, using `AdamW optmizer` with a realy small learning-rate (5e-4) with a linear schedule with warmupbut. With just this epoch, the model was able to generate reviews that were not present on any dataset and classify them in a reasonable way.
 
-   You can find all codes in this repository, but since the deep learning models were large files, we could'nt load it at our git. If you'd like to have acess to the pre-trained weights of the deep learning methods, contact us. 
+   You can find all codes in this repository, but since the deep learning models were large files, we couldn't load it at our repo. If you'd like to have acess to the pre-trained weights of the deep learning methods, contact us. 
 
 We also performed in-context learn with prompt methods using GPT-4, you can find the results on `prompt_incontext.txt` and in the video presentation of this work.
 
